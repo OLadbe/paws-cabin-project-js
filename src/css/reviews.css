@@ -1,0 +1,158 @@
+/* ===== Mobile 320+  ===== */
+
+.success-stories {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background: #f6f4f1;
+}
+
+.testimonials-title-box {
+  max-width: 100%;
+  padding-bottom: 40px;
+}
+
+.success-stories-title {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #02060a;
+}
+
+.success-stories-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #02060a;
+}
+
+.testimonial-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  margin-bottom: 32px;
+}
+
+.testimonial-text {
+  margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #02060a;
+}
+
+.testimonial-author {
+  margin-top: auto;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #02060a;
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+
+  margin-top: 40px;
+}
+
+.slider-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid #c3b49d;
+  border-radius: 8px;
+
+  background: #eee9e3;
+  cursor: pointer;
+}
+
+.testimonial-slider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider-navigation {
+  margin-left: auto;
+  order: 2;
+}
+
+.swiper-pagination {
+  position: static !important;
+  width: auto !important;
+
+  order: 1;
+}
+
+
+
+/* ===== Mobile 375+ ===== */
+
+@media screen and (min-width: 375px) {
+  .success-stories {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* ===== Tablet 768+ ===== */
+
+@media screen and (min-width: 768px) {
+  .success-stories {
+    padding: 64px 32px;
+  }
+
+  .slider-navigation {
+    margin-top: 32px;
+  }
+}
+
+/* ===== Desktop 1440+ ===== */
+
+@media screen and (min-width: 1440px) {
+  .success-stories {
+    padding: 80px 64px;
+  }
+
+  .success-stories-title {
+    font-size: 48px;
+  }
+
+  .success-stories-subtitle {
+    font-size: 18px;
+  }
+
+  .testimonial-text {
+    font-size: 20px;
+  }
+
+  .testimonial-author {
+    font-size: 16px;
+  }
+
+  .slider-navigation {
+    margin-top: 40px;
+  }
+}
