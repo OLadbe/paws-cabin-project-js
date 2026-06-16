@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #f9f9f7;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+/* HERO */
+
+.hero {
+  margin: 0 auto;
+  max-width: 375px;
+  min-height: 544px;
+  padding: 64px 20px 115px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #3e3626;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(62, 54, 38, 0.74) 0%,
+      rgba(62, 54, 38, 0.35) 35%,
+      rgba(62, 54, 38, 0) 100%
+    ),
+    image-set(
+      url("../img/MOBILE-1X-hero.webp") 1x,
+      url("../img/MOBILE-2X-hero.webp") 2x
+    );
+}
+
+.hero-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 335px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  min-width: 171px;
+  height: 45px;
+  padding: 12px 24px;
+  background: rgba(136, 118, 92, 0.85);
+  border: 1px solid rgba(136, 118, 92, 0.85);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.hero-btn:hover {
+  opacity: 0.9;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    margin: 0 auto;
+    padding: 16px 32px;
+    max-width: 768px;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .hero {
+    margin: 0 auto;
+    max-width: 768px;
+    min-height: 544px;
+    padding: 64px 32px;
+    background-position:  8% center;
+      background-image:
+    linear-gradient(
+      90deg,
+      rgba(62, 54, 38, 0.74) 0%,
+      rgba(62, 54, 38, 0.35) 35%,
+      rgba(62, 54, 38, 0) 100%
+    ),
+    image-set(
+      url("../img/TABLET-1X-hero.webp") 1x,
+      url("../img/TABLET-2X-hero.webp") 2x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-container,
+  .hero-container {
+    max-width: 704px;
+  }
+
+  .hero-content {
+    max-width: 622px;
+  }
+
+  .hero-title {
+    max-width: 622px;
+  }
+
+  .hero-text {
+    max-width: 512px;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 72px;
+    padding: 16px 64px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .nav-list {
+    gap: 40px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .header-btn {
+    min-width: 151px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .hero {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 900px;
+    padding: 128px 64px;
+    background-image:
+    linear-gradient(
+      90deg,
+      rgba(62, 54, 38, 0.74) 0%,
+      rgba(62, 54, 38, 0.35) 35%,
+      rgba(62, 54, 38, 0) 100%
+    ),
+    image-set(
+      url("../img/DESKTOP-1X-hero.webp") 1x,
+      url("../img/DESKTOP-2X-hero.webp") 2x
+    );
+    
+  }
+
+  .header-container,
+  .hero-container {
+    max-width: 1312px;
+  }
+
+  .hero-content {
+    max-width: 622px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    max-width: 622px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    max-width: 512px;
+  }
+
+  .hero-btn {
+    min-width: 189px;
+    height: 48px;
+    font-size: 16px;
+  }
+}
