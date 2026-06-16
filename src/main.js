@@ -1,4 +1,5 @@
 
+
 import './css/styles.css';
 import './js/faq.js';
 
@@ -29,4 +30,9 @@ initModals();
 //     prevEl: '.swiper-button-prev',
 //   },
 // });
+
+
+import './js/reviews.js';
+import './js/faq.js';
+import './js/about.js';
 

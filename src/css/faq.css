@@ -4,8 +4,10 @@
 }
 
 .faq-container {
-    max-width: 1440px;
+    width: 100%;
+    max-width: 375px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .faq-title {
@@ -19,6 +21,7 @@
 
 .faq-list {
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -72,7 +75,6 @@
     height: 24px;
     flex-shrink: 0;
     fill: #02060a;
-    ;
     transition: transform 250ms ease;
 }
 
@@ -155,16 +157,15 @@
     margin-top: 16px;
 }
 
-/* mobile від 320 до 374 */
-@media screen and (max-width: 374px) {
+
+@media screen and (max-width: 767px) {
     .faq-section {
         padding: 64px 0;
     }
 
     .faq-container {
-        max-width: 1440px;
+        max-width: 375px;
         margin: 0 auto;
-        padding: 0 20px;
     }
 
     .faq-title {
@@ -184,37 +185,14 @@
 }
 
 
-
-
-/* mobile від 375 */
-@media screen and (min-width: 375px) {
-    .faq-section {
-        padding: 64px 0;
-    }
-
-    .faq-container {
-        padding: 0 32px;
-    }
-
-    .faq-title {
-        font-size: 36px;
-    }
-
-    .faq-list {
-        max-width: 335px;
-    }
-    .faq-question {
-        font-size: 16px ;
-    }
-}
-
 /* tablet від 768 */
 @media screen and (min-width: 768px) {
 .faq-section {
-        padding: 80px 0;
+        padding: 64px 0;
     }
     .faq-container {
         padding: 0 15px;
+        max-width: 768px;
     }
     .faq-title {
         margin-bottom: 40px;
@@ -237,10 +215,11 @@
 /* desktop від 1440 */
 @media screen and (min-width: 1440px) {
     .faq-section {
-        padding: 96px 0;
+        padding: 80px 0;
     }
 
     .faq-container {
+        max-width: 1440px;
         padding: 0 15px;
     }
 
