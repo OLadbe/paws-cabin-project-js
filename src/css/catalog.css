@@ -1,8 +1,6 @@
 :root {
-
     --font-family: "IBM Plex Sans", sans-serif;
     --second-family: "Open Sans", sans-serif;
-
 
     --color-white: #fff;
     --color-red: #ae0000;
@@ -15,7 +13,6 @@
     --color-neutral-lighter: #d9d9da;
     --color-neutral-lightest: #f2f2f2;
 
-
     --color-mariner-darkest: #332c22;
     --color-mariner-darker: #443b2e;
     --color-mariner-dark: #88765c;
@@ -23,7 +20,6 @@
     --color-mariner-light: #c3b49d;
     --color-mariner-lighter: #eee9e3;
     --color-mariner-lightest: #f6f4f1;
-
 
     --opacity-transparent: rgba(255, 255, 255, 0);
     --opacity-white-5: rgba(255, 255, 255, 0.05);
@@ -44,7 +40,6 @@
     --opacity-neutral-darkest-50: rgba(2, 6, 10, 0.5);
     --opacity-neutral-darkest-60: rgba(2, 6, 10, 0.6);
 
-
     --color-scheme-1-background: var(--color-mariner-lightest);
     --color-scheme-1-foreground: var(--color-mariner-lighter);
     --color-scheme-1-border: var(--opacity-neutral-darkest-15);
@@ -57,7 +52,6 @@
     --color-scheme-2-text: var(--color-white);
     --color-scheme-2-accent: var(--color-white);
 }
-
 
 * {
     box-sizing: border-box;
@@ -72,24 +66,24 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
 .pets-section {
-    padding: 60px 0;
     background-color: var(--color-scheme-1-background);
-
 }
 
 
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 64px 20px 32px;
+    
 }
 
 .section-title {
     text-align: center;
     font-family: var(--second-family);
-    font-size: 48px;
+    font-size: 36px;
+    /* Налаштування для Phone */
+    line-height: 1.2;
     font-weight: 700;
     margin-bottom: 16px;
     color: var(--color-scheme-1-text);
@@ -97,19 +91,18 @@ body {
 
 .section-subtitle {
     text-align: center;
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--color-neutral-dark);
-    margin-bottom: 40px;
+    font-size: 16px;
+    /* Налаштування для Phone */
     line-height: 1.2;
     letter-spacing: -0.01em;
+    color: var(--color-neutral-dark);
+    margin-bottom: 40px;
 }
-
 
 .categories-filter {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto 50px auto;
@@ -122,7 +115,6 @@ body {
     font-family: var(--font-family);
     font-size: 1rem;
     font-weight: 500;
-    /* IBM Plex Sans Medium */
     cursor: pointer;
     padding: 5px 10px;
     transition: color 0.2s ease;
@@ -135,7 +127,6 @@ body {
 
 .filter-btn.active {
     font-weight: 600;
-
 }
 
 .pets-grid {
@@ -149,7 +140,6 @@ body {
     display: flex;
     flex-direction: column;
     background: none;
-
 }
 
 .pet-image-wrapper {
@@ -159,7 +149,6 @@ body {
     overflow: hidden;
     margin-bottom: 16px;
     background-color: var(--color-scheme-1-foreground);
-
 }
 
 .pet-image-wrapper img {
@@ -184,7 +173,7 @@ body {
 
 .pet-name {
     font-family: var(--second-family);
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
     color: var(--color-scheme-1-text);
     margin-bottom: 4px;
@@ -213,7 +202,6 @@ body {
     flex-grow: 1;
 }
 
-
 .btn-more {
     background-color: var(--color-scheme-1-foreground);
     border: 1px solid var(--color-scheme-1-text);
@@ -221,14 +209,13 @@ body {
     padding: 12px;
     border-radius: 30px;
     font-family: var(--font-family);
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 400;
     width: 100%;
     cursor: pointer;
     transition: all 0.2s ease;
     text-align: center;
     margin-top: auto;
-
 }
 
 .btn-more:hover {
@@ -262,7 +249,6 @@ body {
 .btn-load-more:disabled {
     display: none;
 }
-
 
 .modal-overlay {
     position: fixed;
@@ -310,35 +296,84 @@ body {
     line-height: 1;
 }
 
-/* --- Адаптив для Mobile (з 375px) --- */
+
 @media (min-width: 375px) {
     .container {
-        max-width: 343px;
-        padding: 0;
+        width: 375px;
     }
 }
 
-/* --- Tablet (з 768px) --- */
 @media (min-width: 768px) {
     .container {
-        max-width: 708px;
+        width: 768px;
+        padding: 64px 32px 32px;
+        
+    }
+
+    .section-title {
+        line-height: 1.2;
+       
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+       
+    }
+
+    .categories-filter {
+        margin-bottom: 32px;
+        
+        gap: 20px;
     }
 
     .pets-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
 
+    .btn-more {
+        font-size: 14px;
+        
+        font-weight: 400;
+        
     }
 }
 
-/* --- Desktop (з 1440px) --- */
+
 @media (min-width: 1440px) {
     .container {
-        max-width: 1200px;
+        width: 1440px;
+        padding: 80px 64px 32px;
+        
+    }
 
+    .section-title {
+        font-size: 48px;
+        
+        line-height: 1.2;
+        
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        line-height: 1.5;
+        
+    }
+
+    .pet-name {
+        font-size: 48px;
     }
 
     .pets-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 40px 30px;
+    }
+
+    .btn-more {
+        font-size: 16px;
+        
+        font-weight: 400;
+        
+        margin-top: 40px;
+        
     }
 }
