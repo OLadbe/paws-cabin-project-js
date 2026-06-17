@@ -18,8 +18,7 @@
     image-set(
       url("../img/MOBILE-1X-hero.webp") 1x,
       url("../img/MOBILE-2X-hero.webp") 2x
-    )
-  no-repeat center / cover #f6f4f1;
+    );
 }
 
 .hero-container {
@@ -104,8 +103,7 @@
     image-set(
       url("../img/TABLET-1X-hero.webp") 1x,
       url("../img/TABLET-2X-hero.webp") 2x
-    )
-    no-repeat center / cover #f6f4f1;
+    );
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -172,8 +170,7 @@
     image-set(
       url("../img/DESKTOP-1X-hero.webp") 1x,
       url("../img/DESKTOP-2X-hero.webp") 2x
-    )
-    no-repeat center / cover #f6f4f1;
+    );
     
   }
 
