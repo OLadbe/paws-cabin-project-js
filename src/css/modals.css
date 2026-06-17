@@ -531,8 +531,7 @@ body.no-scroll {
   .order-modal {
     width: 768px;
     max-width: 768px;
-    max-height: calc(100dvh - 128px);
-
+    height: auto;
     padding: 64px;
   }
 
@@ -547,6 +546,7 @@ body.no-scroll {
 
   .order-form {
     width: 640px;
+    margin-bottom: 0;
   }
 
   .order-form__label,
