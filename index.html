@@ -16,9 +16,9 @@
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Open+Sans:wght@700&display=swap"
     rel="stylesheet">
   <script type="module" crossorigin src="/paws-cabin-project-js/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/paws-cabin-project-js/assets/vendor-CWvqPx2T.js">
-  <link rel="stylesheet" crossorigin href="/paws-cabin-project-js/assets/vendor-Brwt68oH.css">
-  <link rel="stylesheet" crossorigin href="/paws-cabin-project-js/assets/index-5H1P5sAx.css">
+  <link rel="modulepreload" crossorigin href="/paws-cabin-project-js/assets/vendor-CSO7hgCC.js">
+  <link rel="stylesheet" crossorigin href="/paws-cabin-project-js/assets/vendor-CV8GGR2D.css">
+  <link rel="stylesheet" crossorigin href="/paws-cabin-project-js/assets/index-DgxpkyD-.css">
 </head>
 
 <body>
@@ -608,6 +608,82 @@
   <p class="footer-copy">© 2025 Хатинка лапок. Всі права захищені.</p>
 </footer>
 
+
+  <div class="modal-backdrop" data-animal-modal>
+    <div class="animal-modal modal">
+        <button class="modal-close-btn" type="button" aria-label="Закрити модальне вікно" data-animal-close>
+            ×
+        </button>
+
+        <div class="animal-modal__content">
+            <div class="animal-modal__image-wrapper">
+                <img class="animal-modal__image" src="" alt="" data-animal-img />
+            </div>
+
+            <div class="animal-modal__info">
+                <p class="animal-modal__type" data-animal-type></p>
+
+                <h2 class="animal-modal__title" data-animal-name></h2>
+
+                <div class="animal-modal__meta">
+                    <span data-animal-age></span>
+                    <span data-animal-sex></span>
+                </div>
+
+                <div class="animal-modal__section">
+                    <h3 class="animal-modal__section-title">Опис:</h3>
+                    <p class="animal-modal__text" data-animal-description></p>
+                </div>
+
+                <div class="animal-modal__section">
+                    <h3 class="animal-modal__section-title">Здоров’я:</h3>
+                    <p class="animal-modal__text" data-animal-health></p>
+                </div>
+
+                <div class="animal-modal__section">
+                    <h3 class="animal-modal__section-title">Поведінка:</h3>
+                    <p class="animal-modal__text" data-animal-behavior></p>
+                </div>
+
+                <button class="animal-modal__adopt-btn" type="button" data-adopt-btn>
+                    Взяти додому
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal-backdrop" data-order-modal>
+    <div class="order-modal modal">
+        <button class="modal-close-btn" type="button" aria-label="Закрити модальне вікно" data-order-close>
+            ×
+        </button>
+
+        <h2 class="order-modal__title">Залишіть заявку на знайомство</h2>
+
+        <form class="order-form" data-order-form>
+            <label class="order-form__label">
+                Ім’я*
+                <input class="order-form__input" type="text" name="name" placeholder="Андрій" required />
+            </label>
+
+            <label class="order-form__label">
+                Телефон*
+                <input class="order-form__input" type="tel" name="phone" placeholder="380955559922" required />
+            </label>
+
+            <label class="order-form__label">
+                Коментар
+                <textarea class="order-form__textarea" name="comment" placeholder="Напишіть ваш коментар"></textarea>
+            </label>
+
+            <button class="order-form__submit" type="submit">
+                Надіслати
+            </button>
+        </form>
+    </div>
+</div>
 
 </body>
 
