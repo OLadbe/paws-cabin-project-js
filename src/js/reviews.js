@@ -34,7 +34,7 @@ function generateStarsHTML(rating) {
     if (rating >= i) {
       starsHTML += `
         <svg class="star-icon" width="24" height="24">
-          <use href="${spritePath}#icon-star-full"></use> 
+          <use href="${spritePath}#icon-star-filled"></use> 
         </svg>`;
     } else if (rating >= i - 0.5) {
       starsHTML += `
@@ -44,7 +44,7 @@ function generateStarsHTML(rating) {
     } else {
       starsHTML += `
         <svg class="star-icon" width="24" height="24">
-          <use href="${spritePath}#icon-star-empty"></use>
+          <use href="${spritePath}#icon-star-outline"></use>
         </svg>`;
     }
   }
