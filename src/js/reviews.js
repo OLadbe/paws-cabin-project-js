@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-
+import spritePath from '../img/sprite.svg';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -34,17 +34,17 @@ function generateStarsHTML(rating) {
     if (rating >= i) {
       starsHTML += `
         <svg class="star-icon" width="24" height="24">
-          <use href="./img/sprite.svg#icon-star-filled"></use>
+          <use href="${spritePath}#icon-star-full"></use> 
         </svg>`;
     } else if (rating >= i - 0.5) {
       starsHTML += `
         <svg class="star-icon" width="24" height="24">
-          <use href="./img/sprite.svg#icon-star-half"></use>
+          <use href="${spritePath}#icon-star-half"></use>
         </svg>`;
     } else {
       starsHTML += `
         <svg class="star-icon" width="24" height="24">
-          <use href="./img/sprite.svg#icon-star-outline"></use>
+          <use href="${spritePath}#icon-star-empty"></use>
         </svg>`;
     }
   }
