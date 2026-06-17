@@ -1,8 +1,13 @@
 .about-us {
   padding: 64px 0;
   background: #f6f4f1;
+  --swiper-theme-color: #02060a;
 }
-
+.about-swiper-shell {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+}
 .about-title {
   margin: 0 auto 40px auto;
   max-width: 768px;
@@ -91,10 +96,6 @@
   gap: 8px;
 }
 
-.about-us {
-  --swiper-theme-color: #02060a;
-}
-
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -161,6 +162,11 @@
 /* TABLET */
 
 @media screen and (min-width: 768px) {
+  .about-swiper-shell {
+    max-width: 704px;
+    margin: 0 auto;
+    position: relative;
+  }
   .about-title {
     max-width: 768px;
   }
@@ -185,39 +191,39 @@
 
   .about-swiper {
     position: relative;
-    max-width: 704px;
-    margin: 0 auto;
   }
 
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute !important;
-    top: 50%;
+    top: 260px;
     transform: translateY(-50%);
 
     width: 56px;
     height: 56px;
   }
 
+  .about-navigation {
+    display: flex;
+  }
   .swiper-button-prev {
-    left: -28px;
+    left: -22px !important;
   }
 
   .swiper-button-next {
-    right: -28px;
-  }
-
-  .about-navigation {
-    display: block;
+    right: -22px !important;
   }
 }
-
 /* DESKTOP */
 
 @media screen and (min-width: 1440px) {
-  .about-swiper {
+  .about-us {
+    padding: 80px;
+  }
+  .about-swiper-shell {
     max-width: 1312px;
   }
+
   .about-title {
     margin: 0 auto 40px auto;
     font-size: 48px;
