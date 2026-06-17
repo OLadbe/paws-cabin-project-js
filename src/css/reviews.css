@@ -33,9 +33,6 @@
 
   .testimonial-list {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-
     margin: 0;
     padding: 0;
     list-style: none;
@@ -159,11 +156,6 @@
       line-height: 1.5;
       text-align: center;
       color: #02060a;
-  }
-
-  .testimonial-list {
-    flex-direction: row;
-    gap: 32px;
   }
 
   .testimonial-card {
