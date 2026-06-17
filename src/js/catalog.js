@@ -2,7 +2,7 @@ import "/css/styles.css";
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://paw-hut.b.goit.study/api",
+  baseURL: "http://paw-hut.b.goit.study/api",
   timeout: 5000,
   headers: { "Content-Type": "application/json" },
 });
