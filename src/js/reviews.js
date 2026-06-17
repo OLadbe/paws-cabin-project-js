@@ -34,17 +34,17 @@ function generateStarsHTML(rating) {
     if (rating >= i) {
       starsHTML += `
         <svg class="star-icon" width="24" height="24">
-          <use href="img/sprite.svg#icon-star-filled"></use>
+          <use href="./img/sprite.svg#icon-star-filled"></use>
         </svg>`;
     } else if (rating >= i - 0.5) {
       starsHTML += `
         <svg class="star-icon" width="24" height="24">
-          <use href="img/sprite.svg#icon-star-half"></use>
+          <use href="./img/sprite.svg#icon-star-half"></use>
         </svg>`;
     } else {
       starsHTML += `
         <svg class="star-icon" width="24" height="24">
-          <use href="img/sprite.svg#icon-star-outline"></use>
+          <use href="./img/sprite.svg#icon-star-outline"></use>
         </svg>`;
     }
   }
