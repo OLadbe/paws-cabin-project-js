@@ -1,7 +1,7 @@
 const openModalBtn = document.querySelector('.burger-btn');
 const closeModalBtn = document.querySelector('.backdrop-btn-close');
 const backdrop = document.querySelector('.backdrop');
-const modalLinks = document.querySelectorAll('.modal-link');
+const modalLinks = document.querySelectorAll('.modal-link, .nav-modal-btn-take');
 
 openModalBtn.addEventListener('click', () => {
   backdrop.classList.remove('is-hidden');
