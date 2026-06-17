@@ -71,7 +71,7 @@ body {
 }
 
 
-.container {
+.catalog-container {
     width: 100%;
     margin: 0 auto;
     padding: 64px 20px 32px;
@@ -298,13 +298,13 @@ body {
 
 
 @media (min-width: 375px) {
-    .container {
+    .catalog-container {
         width: 375px;
     }
 }
 
 @media (min-width: 768px) {
-    .container {
+    .catalog-container {
         width: 768px;
         padding: 64px 32px 32px;
         
@@ -340,7 +340,7 @@ body {
 
 
 @media (min-width: 1440px) {
-    .container {
+    .catalog-container {
         width: 1440px;
         padding: 80px 64px 32px;
         
