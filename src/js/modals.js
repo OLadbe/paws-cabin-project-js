@@ -152,24 +152,48 @@ async function onOrderFormSubmit(event) {
   event.preventDefault();
 
   const formData = new FormData(refs.orderForm);
-
   const orderData = {
-    name: formData.get('name')?.trim() || '',
-    phone: formData.get('phone')?.trim() || '',
-    animalId: currentAnimalId,
-    comment: formData.get('comment')?.trim() || '',
-  };
+  name: formData.get('name')?.trim() || '',
+  phone: formData.get('phone')?.trim() || '',
+  animalId: currentAnimalId,
+};
 
-  if (!orderData.name || !orderData.phone || !orderData.animalId) {
-    Swal.fire({
-      icon: 'warning',
-      title: 'Заповніть обов’язкові поля',
-      text: 'Ім’я, телефон та тваринка є обов’язковими.',
-      confirmButtonText: 'Добре',
-    });
+const comment = formData.get('comment')?.trim();
+if (comment) {
+  orderData.comment = comment;
+};
 
-    return;
-  }
+const phoneRegex = /^380\d{9}$/;
+const nameRegex = /^[A-Za-zА-Яа-яІіЇїЄєҐґ'\-\s]{2,50}$/;
+
+if (!orderData.name) {
+  showValidationError("Введіть ім’я.");
+  return;
+}
+
+if (!nameRegex.test(orderData.name)) {
+  showValidationError(
+    "Ім’я повинно містити від 2 до 50 літер."
+  );
+  return;
+}
+
+if (!orderData.phone) {
+  showValidationError('Введіть номер телефону.');
+  return;
+}
+
+if (!phoneRegex.test(orderData.phone)) {
+  showValidationError(
+    'Номер телефону має бути у форматі 380XXXXXXXXX.'
+  );
+  return;
+}
+
+if (!orderData.animalId) {
+  showValidationError('Не вибрано тваринку.');
+  return;
+}
 
   const submitBtn = refs.orderForm.querySelector('[type="submit"]');
 
@@ -204,6 +228,16 @@ async function onOrderFormSubmit(event) {
     submitBtn.textContent = 'Надіслати';
   }
 }
+
+function showValidationError(message) {
+  Swal.fire({
+    icon: 'warning',
+    title: 'Некоректні дані',
+    text: message,
+    confirmButtonText: 'Добре',
+  });
+}
+
 
 async function createOrder(orderData) {
   const response = await instance.post('/api/orders', orderData);
