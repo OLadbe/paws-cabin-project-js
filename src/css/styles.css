@@ -18,3 +18,9 @@
 @import url('./reviews.css');
 @import url('./footer.css');
 @import url('./navbar.css');
+@import url('./modals.css');
+/* ПЛАВНЫЙ СКРОЛЛ ТЕСТ */
+
+html {
+  scroll-behavior: smooth;
+}

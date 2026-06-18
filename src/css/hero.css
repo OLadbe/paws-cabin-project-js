@@ -24,6 +24,11 @@
 .hero-container {
   display: flex;
   align-items: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  max-width: 1312px;
+  
 }
 
 .hero-content {

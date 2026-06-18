@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Хатинка Лапок — Header</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <div class="header-logo-group" id="welcome">
+          <a
+            href="#intro"
+            class="header-logo"
+            aria-label="Хатинка Лапок — логотип"
+          >
+            <svg class="header-logo-icon" aria-hidden="true">
+              <use href="/img/sprite.svg#icon-icon-company-logo"></use></svg
+          ></a>
+        </div>
+        <button class="burger burger-btn" id="burger-btn" aria-label="Меню">
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="/img/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="header-nav-container">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a href="#pets-section" class="header-nav-list-link">Знайди друга</a>
+              </li>
+
+              <li>
+                <a href="#about-us" class="header-nav-list-link">Про нас</a>
+              </li>
+
+              <li>
+                <a href="#faq" class="header-nav-list-link">Часті запитання</a>
+              </li>
+
+              <li>
+                <a href="#success-stories" class="header-nav-list-link">Історії успіху</a>
+              </li>
+            </ul>
+          </nav>
+
+         <a id="take-friend-btn" class="btn-primary" href="#pets-section" aria-label="Взяти друга">Взяти друга</a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
