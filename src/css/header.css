@@ -14,8 +14,7 @@
   padding: 0 12px;
   margin: 0 auto;
 }
-.header-logo-group {
-}
+ 
 .logo-group {
   display: flex;
   align-items: center;
@@ -23,10 +22,10 @@
 
 .header-logo-icon {
   margin-left: 8px;
-  display: inline-flex;
+  display: block;
   align-items: center;
   width: 160px;
-  height: auto;
+  height: 68.36px;
   flex-shrink: 0;
   text-decoration: none;
 }
