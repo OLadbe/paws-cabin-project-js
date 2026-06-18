@@ -113,7 +113,7 @@ body {
     border: none;
     color: var(--color-scheme-1-text);
     font-family: var(--font-family);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     padding: 5px 10px;
@@ -122,7 +122,13 @@ body {
 
 .filter-btn:hover,
 .filter-btn.active {
-    color: var(--color-scheme-1-accent);
+border: 1px solid var(--opacity-transparent);
+    border-radius: 100px;
+    background: var(--color-scheme-1-foreground);
+    padding: 10px 16px;
+    transition: background-color 0.5s ease, color 0.2s ease;
+      
+ 
 }
 
 .filter-btn.active {
