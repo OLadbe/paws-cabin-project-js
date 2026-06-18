@@ -4,6 +4,8 @@
   --swiper-theme-color: #02060a;
 }
 .about-swiper-shell {
+  position: relative;
+  overflow: visible;
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
@@ -88,7 +90,7 @@
 
 /* PAGINATION */
 
-.swiper-pagination {
+.about-swiper-pagination {
   position: static !important;
   width: auto !important;
 
@@ -109,8 +111,8 @@
   background-color: #02060a !important;
 }
 /* BUTTONS */
-.swiper-button-prev,
-.swiper-button-next {
+.about-swiper-button-prev,
+.about-swiper-button-next {
   position: static !important;
 
   width: 48px;
@@ -135,15 +137,15 @@
     box-shadow 250ms ease,
     opacity 250ms ease;
 }
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.about-swiper-button-prev::after,
+.about-swiper-button-next::after {
   display: none;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover,
-.swiper-button-prev:focus,
-.swiper-button-next:focus {
+.about-swiper-button-prev:hover,
+.about-swiper-button-next:hover,
+.about-swiper-button-prev:focus,
+.about-swiper-button-next:focus {
   background: #eee9e3;
   border-color: #c2a47e;
   border: 1px solid rgba(2, 6, 10, 0.6);
@@ -185,7 +187,7 @@
     justify-content: center;
   }
 
-  .swiper-pagination {
+  .about-swiper-pagination {
     justify-content: center;
   }
 
@@ -193,32 +195,30 @@
     position: relative;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
+  .about-swiper-button-prev,
+  .about-swiper-button-next {
     position: absolute !important;
     top: 260px;
     transform: translateY(-50%);
-
-    width: 56px;
-    height: 56px;
+    z-index: 50;
   }
 
   .about-navigation {
     display: flex;
   }
-  .swiper-button-prev {
-    left: -22px !important;
+  .about-swiper-button-prev {
+    left: -24px !important;
   }
 
-  .swiper-button-next {
-    right: -22px !important;
+  .about-swiper-button-next {
+    right: -24px !important;
   }
 }
 /* DESKTOP */
 
 @media screen and (min-width: 1440px) {
   .about-us {
-    padding: 80px;
+    padding: 80px 0;
   }
   .about-swiper-shell {
     max-width: 1312px;
@@ -235,11 +235,11 @@
     height: 620px;
   }
 
-  .swiper-button-prev {
-    left: -32px;
+  .about-swiper-button-prev {
+    left: -24px;
   }
 
-  .swiper-button-next {
-    right: -32px;
+  .about-swiper-button-next {
+    right: -24px;
   }
 }

@@ -12,12 +12,12 @@ const aboutSwiper = new Swiper('.about-swiper', {
   spaceBetween: 24,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.about-swiper-pagination',
     clickable: true,
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.about-swiper-button-next',
+    prevEl: '.about-swiper-button-prev',
   },
 });
