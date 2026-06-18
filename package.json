@@ -17,12 +17,12 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "swiper": "^12.2.0",
     "accordion-js": "^3.4.1",
     "axios": "^1.18.0",
     "sweetalert2": "^11.26.25",
     "simplelightbox": "^2.14.3",
     "raty-js": "^4.3.0",
+    "swiper": "^12.2.0",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

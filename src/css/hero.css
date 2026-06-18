@@ -77,6 +77,9 @@
 
 .hero-btn:hover {
   opacity: 0.9;
+  color: #02060a;
+  border: 1px solid #88765c;
+  background: #eee9e3;
 }
 
 /* TABLET */
