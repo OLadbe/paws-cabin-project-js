@@ -1,5 +1,5 @@
 import './css/styles.css';
-
+import './js/header-paw-trail.js'
 import './js/about.js';
 import './js/catalog.js';
 import './js/faq.js';
